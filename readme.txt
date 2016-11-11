@@ -1,30 +1,67 @@
-=== SlideShare ===
+=== SlideShare for WordPress by Yoast ===
 Contributors: joostdevalk
-Donate link: http://yoast.com/donate/
-Tags: powerpoint, keynote, ppt, presentation, slide shows, presentations
-Requires at least: 2.9
-Tested up to: 3.1.2
-stable tag: 1.8
+Donate link: https://yoast.com/donate/
+Tags: slideshare, powerpoint, keynote, ppt, presentation, slide shows, presentations
+Requires at least: 3.0
+Tested up to: 4.0
+Stable tag: 1.9.1
 
-Easily embed SlideShare presentations into your WordPress posts.
+Easily embed SlideShare presentations into your WordPress posts by using the SlideShare WordPress.com embed code.
 
 == Description ==
 
-Easily embed SlideShare presentations or documents into your WordPress posts by copying the WordPress.com embed code, and change the default width with one simple setting. Once installed, simply go to any SlideShare presentation, click on Embed -> Customize and copy / paste the WordPress.com embed code. You can also just paste the URL of a presentation on it's own line in a post.
+Easily embed SlideShare presentations or documents into your WordPress posts.
+
+= oEmbed =
+Just paste the URL of a presentation on its own line in a post, hit Publish / Update and you're done.
+
+= Embed with shortcode =
+Once installed, simply go to any SlideShare presentation, click on Share and copy / paste the WordPress embed code.
+
+> <strong>Development on GitHub</strong><br>
+> Development for the SlideShare plugin happens in [this GitHub repository](https://github.com/Yoast/slideshare), bug reports and pull requests are welcome there.
 
 More info:
 
-* [SlideShare WordPress plugin](http://yoast.com/wordpress/slideshare/).
-* Check out the other [Wordpress plugins](http://yoast.com/wordpress/) by the same author.
+* [SlideShare WordPress plugin](https://yoast.com/wordpress/plugins/slideshare/).
+* Check out the other [Wordpress plugins](https://yoast.com/wordpress/plugins/) by the same author.
 
 == Changelog ==
+
+= 1.9.1 =
+
+* Bugfixes
+	* Add missing function options_init function, fixes fatal error.
+
+* Enhancements
+	* Namespace all functions and classes.
+	* Moved development to GitHub.
+	* Removed unused classes from CSS and unused images from plugin download.
+
+= 1.9 =
+
+* Enhancements
+	* Made the plugin work with version 2 of SlideShare's oembed API.
+	* Made the plugins always use SSL for embedding.
+	* Remove the credit link back to Slideshare.
+	* Optimize code.
+	* Remove Yoast dashboard widget.
+* i18n updates:
+	* Added fa_IR & hu_HU
+
+= 1.8.1 =
+
+* Fixed bug in dashboard widget.
+* Improved plugin backend.
+* Improved i18n support.
+* Added donation box (hint ;) ).
 
 = 1.8 =
 
 * Support oEmbed for SlideShare.
 * Use new iframe embed method over object tag.
 * Better calculation of height related to width.
-* [Separation of frontend and backend code](http://yoast.com/wp-best-practice/separate-frontend-admin-code/) for better performance.
+* [Separation of frontend and backend code](https://yoast.com/separate-frontend-admin-code/) for better performance.
 
 = 1.7.2 =
 
@@ -88,6 +125,18 @@ More info:
 = 1.0 =
 
 * Initial commit.
+
+== Frequently Asked Questions ==
+
+= How do I embed a presentation? =
+
+Two options:
+* Either embed the URL of the presentation on a line of its own.
+* Copy the WordPress embed code.
+
+== Screenshots ==
+
+1. Screenshot of the SlideShare plugin configuration page.
 
 == Installation ==
 
